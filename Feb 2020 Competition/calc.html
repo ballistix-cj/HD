@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="ie=edge" http-equiv="x-ua-compatible" />
+	<meta content="" name="description" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="icon" href="https://www.heightdynamics.com.au/wp-content/uploads/2018/11/cropped-logo-hd-large-1-32x32.png" sizes="32x32" />
+	<link rel="icon" href="https://www.heightdynamics.com.au/wp-content/uploads/2018/11/cropped-logo-hd-large-1-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.heightdynamics.com.au/wp-content/uploads/2018/11/cropped-logo-hd-large-1-180x180.png" />
+	<title>Online Quiz | Height Dynamics</title>
+	<!-- Place favicon.ico in the root directory -->
+	<script src="https://use.fontawesome.com/542c086aff.js"></script>
+	<link href="./dist/css/styles.min.css?ver=1.0.0" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="site-wrap">
+		<header id="site-header" role="banner" data-element="scroll">
+			<div class="container">
+				<a href="https://heightdynamics.com.au"><img src="https://heightsafety.heightdynamics.com.au/asset/340:hd-logopng1" alt=""></a>
+			</div>
+			<!-- /.container -->
+		</header>
+		<main id="site-content" class="calc-page">
+			<section id="block-1">
+				<div class="container">
+					<div class="col">
+						<h1>Fall Clearance Calculator</h1>
+						<p>This calculator lets you work out fall clearance in different situations. It’s highly intuitive — just plug in your numbers and go!</p>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<!-- /section -->
+			<section id="calc">
+				<div class="container">
+					<div class="row">
+					<div class="col">
+							<!-- <th>Parameter</th>
+							<th>Abbr</th>
+							<th>Value</th> -->
+							<form action="" class="label-inline">
+								<div class="message"></div>
+								<b>Workplace geometry</b>
+								<div id="vd" class="input-field">
+									<label>Vertical distance from anchor point to work platform <span class="alignright">VD</span>
+									</label>
+									<input type="number" name="vd" value="50">
+								</div>
+								<div id="hd" class="input-field">
+									<label>Horizontal distance from anchor point to work platform edge <span class="alignright">HD</span>
+									</label>
+									<input type="number" name="hd" value="100">
+								</div>
+								<b>Lanyard details</b>
+								<div id="ll" class="input-field">
+									<label>Lanyard length <span class="alignright">LL</span>
+									</label>
+									<input type="number" name="ll" value="250">
+								</div>
+								<div id="h" class="input-field">
+									<label>Vertical distance from platform to lanyard attachment on harness <span class="alignright">H</span>
+									</label>
+									<input type="number" name="h" value="300">
+								</div>
+								<b>Free fall distance</b>
+								<div id="s" class="input-field">
+									<label>Angular distance from anchor point to work platform edge <span class="alignright">S</span>
+									</label>
+									<input type="number" name="s" value="0" readonly>
+								</div>
+								<div id="ff" class="input-field">
+									<label>Unobstructed free fall distance (LL-S+H) <span class="alignright">FF</span>
+									</label>
+									<input type="number" name="ff" value="0" readonly>
+								</div>
+								<b>Required fall clearance</b>
+								<div id="dd" class="input-field">
+									<label>Deceleration distance (lanyard tear-out value) <span class="alignright">DD</span>
+									</label>
+									<input type="number" name="dd" value="0" readonly>
+								</div>
+								<div id="c" class="input-field">
+									<label>Manditory clearance <span class="alignright">C</span>
+									</label>
+									<input type="number" name="c" value="1000" readonly>
+								</div>
+								<div id="rd" class="input-field bg-primary">
+									<label><b>REQUIRED FALL CLEARANCE</b> <span class="alignright">RD</span>
+									</label>
+									<input type="number" name="rd" value="0" readonly>
+								</div>
+							</form>
+
+							<div>
+								<ul class="list-inline diagram">
+									<li><img src="./dist/img/vertical-distance.png" alt=""></li>
+									<li><img src="./dist/img/horizontal-distance.png" alt=""></li>
+									<li><img src="./dist/img/lanyard-length.png" alt=""></li>
+									<li><img src="./dist/img/height.png" alt=""></li>
+								</ul>
+							</div>
+						</div>
+
+					<div class="col">
+						<img src="./dist/img/required-fall-distance.png" alt="">
+					</div>
+				</div></div>
+				<!-- /.container -->
+			</section>
+		</main>
+		<!-- /#site-content -->
+		<footer id="site-footer">
+			<div class="container">
+				<div class="colophon">
+					<span>Height Dynamics. All Rights Reserved. | Site by Ballistix.</span>
+				</div>
+			</div>
+		</footer>
+		<!-- /#site-footer -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.min.js"></script> -->
+		<!-- <script src="./dist/js/scripts.min.js?ver=1.0.0" type="text/javascript"></script> -->
+		<!-- <script src="https://static.ballistixmail.com/heightdynamics/online-quiz/dist/js/scripts.min.js" type="text/javascript"></script> -->
+	</div>
+	<script>
+		jQuery.noConflict();
+		(function($) {
+			$('body').on('change paste keyup', 'input', function() {
+				compute();
+			});
+
+			function compute() {
+				$('form .message').remove();
+				vd = Number($('input[name="vd"]').val());
+				hd = Number($('input[name="hd"]').val());
+				ll = Number($('input[name="ll"]').val());
+				h = Number($('input[name="h"]').val());
+				c = Number($('input[name="c"]').val());
+				s = Math.sqrt(Math.pow(vd, 2) + Math.pow(hd, 2));
+				$('input[name="s"]').val(Math.round(s));
+				ff = ll - s + h;
+				$('input[name="ff"]').val(Math.round(ff));
+				if (ff < 600) {
+					dd = 0;
+				} else if (ff >= 600 && ff < 1000) {
+					dd = 300;
+				} else if (ff >= 1000 && ff < 1500) {
+					dd = 500;
+				} else if (ff >= 1500 && ff < 2000) {
+					dd = 600;
+				} else if (ff >= 2000) {
+					dd = 900;
+				};
+				$('input[name="dd"]').val(Math.round(dd));
+				rd = ff + dd + c;
+				$('input[name="rd"]').val(Math.round(rd));
+				if ((ll + h) < vd) { // false
+					$('#ll').addClass('error');
+					$('#ll .error').remove();
+					$('#ll').append('<span class="error">Your lanyard is not long enough to enable you to stand on the work platform!</span>');
+				} else {
+					$('#ll').removeClass('error');
+					$('#ll .error').remove();
+				}
+
+				if ((ff <= 2000) && (ll + dd) > s) { //true
+					$('form').append('<div class="message warning"><b>Summary:</b> Freefall has occurred, you have fallen past the edge of the work platform and a rescue will be needed to be performed to get you back to a position of safety</div>');
+				} else if (ff > 2000) { // false
+					$('form').append('<div class="message danger"><b>Summary:</b> Danger! Free fall of greater than 2 metres has occurred. You should consider using a higher anchor or a shorter lanyard to reduce the fall distance. </div>');
+				}
+
+				if (s > (ll + dd) && s < (ll + dd + h)) { // false
+					$('form').append('<div class="message warning"><b>Summary:</b> Free fall has occurred, it is unlikely that you have fallen past the work platform. A rescue may be needed to be performed to get you back to a position of safety. </div>');
+				}
+
+				if (s >= (ll + dd + h) && (ll + h) >= vd) { // false
+					$('form').append('<div class="message success"><b>Summary:</b> Great, no free fall has occurred you are working in travel restraint. </div>');
+				}
+			}
+			compute();
+		})(jQuery);
+	</script>
+	<!-- /#site-wrap -->
+</body>
+
+</html>
