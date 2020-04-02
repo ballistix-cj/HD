@@ -1,0 +1,100 @@
+#calc {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  .row {
+    background-color: tint($light-gray, 80);
+    .col {
+      padding-top: $base-spacing*2;
+      padding-bottom: $base-spacing;
+      &:first-child {
+        flex-basis: 66.66%;
+        background-color: #fff;
+      }
+      &:last-child {
+        flex-basis: 33.33%;
+        text-align: center;
+      }
+    }
+  }
+  .diagram {
+    li {
+      max-width: 25%;
+    }
+  }
+}
+.label-inline {
+  max-width: 720px;
+  .message {
+    padding: $small-spacing;
+    line-height: 1.2;
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
+    border: 1px solid gray;
+    color: shade(gray, 25);
+    background-color: rgba(red( gray ), green( gray ), blue( gray ), 0.15);
+    &.success {
+      border: 1px solid green;
+      color: shade(green, 25);
+      background-color: rgba(red( green ), green( green ), blue( green ), 0.15);
+    }
+    &.info {
+      border: 1px solid blue;
+      color: shade(blue, 25);
+      background-color: rgba(red( blue ), green( blue ), blue( blue ), 0.15);
+    }
+    &.warning {
+      border: 1px solid orange;
+      color: shade(orange, 25);
+      background-color: rgba(red( orange ), green( orange ), blue( orange ), 0.15);
+    }
+    &.danger {
+      border: 1px solid red;
+      color: shade(red, 25);
+      background-color: rgba(red( red ), green( red ), blue( red ), 0.15);
+    }
+  }
+  .input-field {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $small-spacing/2;
+    label {
+      font-weight: 400;
+      flex-basis: 85%;
+      padding-left: $base-spacing;
+      padding-right: $base-spacing;
+      margin-bottom: 0;
+
+
+    }
+    input {
+      flex-basis: 15%;
+      margin-bottom: 0;
+      padding: 5px;
+      text-align: right;
+      &[readonly] {
+        border: 0;
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+    &.error {
+      background-color: rgba(red( red ), green( red ), blue( red ), 0.15);
+      label {
+      }
+      input {
+        border: 1px solid red;
+      }
+      .error {
+        font-style: italic;
+        color: red;
+        //font-size: 14px;
+        flex-basis: 100%;
+        text-align: right;
+      }
+    }
+  }
+}

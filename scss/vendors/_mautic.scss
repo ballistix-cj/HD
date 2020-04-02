@@ -1,0 +1,158 @@
+.mauticform-post-success {
+  .mauticform-innerform{
+    opacity: 0;
+  }
+}
+// .mauticform-message:not(:empty) {
+//     display: block;
+//     @include padding($small-spacing);
+//     margin-bottom: $base-spacing;
+//     border: 1px solid $primary-color;
+//     background-color: lighten($primary-color, 20);
+// }
+// .mauticform-innerform {
+//   opacity: 1;
+//   transition: all $base-duration $base-timing;
+//   .mauticform-row {
+//     position: relative;
+//     padding-top: $small-spacing;
+//     .mauticform-label{
+//       top: $small-spacing + $small-spacing;
+//       left: $small-spacing;
+//       transition: all $base-duration $base-timing;
+//       color: $dark-gray;
+//       font-weight: 700;
+//       line-height: 1.2;
+//       &.active {
+//           top: -$small-spacing;
+//           left: 0;
+//           font-size: modular-scale(-1);
+
+//       }
+//       .mauticform-input,
+//       .mauticform-selectbox {
+
+//       }
+//     }
+//     .mauticform-radiogrp-label{
+//       font-weight: 500;
+//       position: relative;
+
+//       .mauticform-radiogrp-radio{
+//         background-color: #fff;
+//         position: absolute;
+//         opacity: 0;
+//         cursor: pointer;
+//         height: 0;
+//         width: 0;
+//       }
+
+//       &:before{
+//         content: "";
+//         width: 16px;
+//         height: 16px;
+//         border-radius: 50%;
+//         border: 2px solid #EBEDED;
+//         display: inline-block;
+//       }
+//     }
+//   }
+// }
+
+.mauticform_wrapper{
+  &.mauticform-post-success{
+    .mauticform-innerform{
+      display: none;
+    }
+  }
+  .mauticform-message{
+    background-color: $primary-color;
+    text-align: center;
+    color: #fff;
+  }
+  .mauticform-pagebreak-wrapper{
+    text-align: center;
+  }
+  .mauticform-page-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    .mauticform-row{
+      width: 100%;
+      margin-bottom: 10px;
+      input, textarea, select{
+        padding: $small-spacing*1.5;
+        border: 0;
+        margin-bottom: 0;
+        font-size: 13px;
+      }
+      .mauticform-errormsg{
+        color: red;
+      }
+      button{
+        padding: $small-spacing $base-spacing*2;
+        // text-transform: uppercase;
+        width: 100%;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        color: #fff;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 1px;
+        &:hover{
+          background-color: #fff;
+          color: $primary-color;
+        }
+      }
+
+      &.order-1{
+        order: 1;
+      }
+      &.order-2{
+        order: 2;
+      }
+      &.order-3{
+        order: 3;
+      }
+      &.order-4{
+        order: 4;
+      }
+      &.order-5{
+        order: 5;
+      }
+      &.order-6{
+        order: 6;
+      }
+      &.order-7{
+        order: 7;
+      }
+      &.order-8{
+        order: 8;
+      }
+      &.order-9{
+        order: 9;
+      }
+      &.order-10{
+        order: 10;
+      }
+      @include media($tablet-width){
+        &.one-half{
+          width: calc(50% - 10px);
+        }
+        &.one-third{
+          width: calc(33.33% - 10px);
+        }
+        &.auto-width{
+          width: auto;
+        }
+        input, textarea, select{
+          // margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @include media($tablet-width){
+    // width: 700px;
+    margin: 0 auto;
+  }
+}

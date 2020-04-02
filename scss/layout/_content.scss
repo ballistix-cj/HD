@@ -1,0 +1,217 @@
+#site-content{
+  section {
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing;
+  }
+  #block-1{
+    background-image: url(../img/steel-background.png);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    h1, h2, h3, h4, h5, h6{
+      span{
+        color: #FC6719;
+      }
+    }
+  	h1{
+			font-size: 30px;
+			font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+  	}
+  	h3{
+      font-weight: 600;
+      br{
+        display: none;
+      }
+  	}
+    h4{
+      color: $primary-color;
+      font-weight: 600;
+    }
+  	blockquote{
+  		border-left: 2px solid $primary-color;
+  		margin-left: 0;
+  		padding-left: $base-spacing;
+  		font-size: 18px;
+      font-weight: 700;
+      br{
+        display: none;
+      }
+  	}
+    p{
+      line-height: 1.6;
+
+      span{
+        font-weight: 700;
+        color: $primary-color;
+      }
+      br{
+        display: none;
+      }
+    }
+  	img{
+  		display: block;
+      margin: 0 auto;
+      transition: all .2s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+      }
+  	}
+    
+    .col:first-child{
+      position: relative;
+      z-index: 10;
+    }
+    .col:last-child{
+      position: relative;
+      img{
+        margin-bottom: $base-spacing;
+        position: relative;
+        z-index: 10;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.4;
+        span{
+          color: #FC6719;
+        }
+      }
+    }
+  	@include media($tablet-width){
+  		padding-top: $base-spacing*3;
+  		padding-bottom: $base-spacing*3;
+      h1{
+        font-size: 54px;
+        // margin-bottom: $base-spacing*2;
+      }
+  		h3{
+  			font-size: 25px;
+        
+  		}
+      h4{
+        font-size: 25px;
+      }
+			blockquote{
+        font-size: 21px;
+        
+      }
+      p{
+        br{
+          display: inline;
+        }
+      }
+  	}
+    @include media($desktop-width){
+      h1{
+        font-size: 106px;
+      }
+      h3{
+        font-size: 40px;
+        
+      }
+    }
+  	@include media($fullHD-width){
+  		padding-top: $base-spacing*5;
+  		padding-bottom: $base-spacing*5;
+      .col:first-child{
+        flex-basis: 45%;
+      }
+      .col:last-child{
+        flex-basis: 55%;
+      }
+      h3{
+        br{
+          display: inline;
+        }
+      }
+  		blockquote{
+  			line-height: 1.2;
+  			margin: $base-spacing*2 0;
+  		}
+      
+  	}
+  }
+  #take-the-quiz{
+    background-color: #F8F8F8;
+    
+    h2{
+      text-align: center;
+      margin-bottom: $base-spacing*2;
+      color: #555555;
+      br{
+        display: none;
+      }
+    }
+
+    .mauticform-row.mauticform-radiogrp{
+      padding-left: $base-spacing*1.5;
+      .mauticform-radiogrp-label{
+        font-weight: 500;
+      }
+    }
+
+    .mauticform-button {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .mauticform_wrapper{
+      .mauticform-page-wrapper{
+        counter-reset: my-awesome-counter;
+        .mauticform-row.question-item{
+          counter-increment: my-awesome-counter;
+        }
+        .mauticform-row.question-item:before{
+          content: counter(my-awesome-counter) ". ";
+          font-weight: bold;
+          float: left;
+          margin-left: -$base-spacing*1.5;
+        }
+      }
+      .mauticform-row.mauticform-freehtml.mauticform-field-11,
+      .mauticform-row.mauticform-checkboxgrp.mauticform-field-16.mauticform-required.terms{
+        margin-top: $base-spacing*2;
+        margin-bottom: $base-spacing;
+      }
+
+    }
+    @include media($tablet-width){
+      padding-top: $base-spacing*3;
+      padding-bottom: $base-spacing*3;
+      .col{
+        margin: 0 auto;
+      }
+      h2{
+        font-size: 33px;
+      }
+    }
+    @include media($desktop-width){
+      .col{
+        width: 800px;
+      }
+    }
+    @include media($fullHD-width){
+      padding-top: $base-spacing*5;
+      padding-bottom: $base-spacing*5;
+    }
+  }
+  #block-3{
+    background-color: #F8F8F8;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    img{
+      display: block;
+    }
+    @include media($tablet-width){
+      img{
+        width: calc(25% - 2px);
+      }
+      img:last-child{
+        width: calc(50% - 2px);
+      }
+    }
+  }
+}

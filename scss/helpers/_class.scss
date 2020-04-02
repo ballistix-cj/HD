@@ -1,0 +1,19 @@
+.alignright {
+  float: right;
+}
+.bg-primary {
+  background-color: rgba(red( $primary-color ), green( $primary-color ), blue( $primary-color ), 0.15);
+  label, span, p, input {
+    color: $primary-color;
+    font-weight: 700;
+  }
+}
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > li {
+    display: inline-block;
+  }
+
+}
